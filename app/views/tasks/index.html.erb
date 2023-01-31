@@ -14,6 +14,9 @@
         <td>
           <%= link_to 'タスク編集', edit_task_path(task.id) %>
         </td>
+        <td>
+          <%= link_to 'タスク削除', task_path(task.id), method: :delete, data:{confirm: "本当に"} %>
+        </td>
       </tr>
     <% end %>
   </tbody>
